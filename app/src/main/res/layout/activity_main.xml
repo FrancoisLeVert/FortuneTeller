@@ -9,25 +9,50 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:theme="@style/AppTheme.AppBarOverlay"/>
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-    </com.google.android.material.appbar.AppBarLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:background="@drawable/milky_way"/>
 
-    <include layout="@layout/content_main" />
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:text="@string/enter_your_birthday_for_horoscope"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp"
+        android:autofillHints=""
+        android:layout_marginStart="20dp" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+    <TextView
+        android:id="@+id/birthdayInput"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:text="@string/select_date"
+        android:paddingTop="10dp"
+        android:textColor="@color/cardview_light_background" />
+
+    <Button
+        android:id="@+id/birthdayButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/submit"
+        android:layout_marginStart="20dp" />
+
+
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
